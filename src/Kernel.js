@@ -6,7 +6,7 @@ export default class Kernel{
         this.filesystem = new Filesystem(config.files)
         this.apps = config.apps || []
         this.plugins = []
-    },
+    }
 
 
     registerPlugin(plugin){
