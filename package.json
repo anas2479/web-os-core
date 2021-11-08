@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anas2479/WebOS-core.git"
+    "url": "git+https://github.com/anas2479/web-os-core.git"
   },
   "author": "Anas Mohamed",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/anas2479/WebOS-core/issues"
+    "url": "https://github.com/anas2479/web-os-core/issues"
   },
-  "homepage": "https://github.com/anas2479/WebOS-core#readme",
+  "homepage": "https://github.com/anas2479/web-os-core#readme",
   "dependencies": {
     "dayjs": "^1.10.7",
     "webpack": "^5.62.1"
