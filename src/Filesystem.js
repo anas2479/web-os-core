@@ -20,3 +20,29 @@ export class File{
     }
 }
 
+
+export class Folder{
+    constructor(name,subfolders,files){
+
+        this.name = name
+        this.subfolders  = subfolders || []
+        this.files  = files || []
+    }
+
+    create(){
+
+        let folder = {
+            name:this.name,
+            subfolders:this.subfolders,
+            files:this.files,
+            createdDate:new OS_Date().getDate()
+        }
+
+        return folder
+    }
+}
+
+
+
+
+
