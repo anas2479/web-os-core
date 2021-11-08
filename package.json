@@ -1,0 +1,26 @@
+{
+  "name": "web-os-core",
+  "version": "0.0.0",
+  "description": "The core for creating OS-like web experiences.",
+  "main": "src/Kernel.js",
+  "scripts": {
+    "build": "webpack -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anas2479/WebOS-core.git"
+  },
+  "author": "Anas Mohamed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anas2479/WebOS-core/issues"
+  },
+  "homepage": "https://github.com/anas2479/WebOS-core#readme",
+  "dependencies": {
+    "dayjs": "^1.10.7",
+    "webpack": "^5.62.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.9.1"
+  }
+}
