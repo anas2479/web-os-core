@@ -46,3 +46,41 @@ export class Folder{
 
 
 
+
+
+export class Filesystem{
+    constructor(files){
+
+        let fallbackFiles = [
+            {
+                name:"root",
+                subfolders:[],
+                files:[],
+                createdDate: new OS_Date().getDate(),
+            }
+        ]
+
+
+        this.files = files || fallbackFiles
+
+        this.currentLocation = files[0]
+    }
+
+    newFile(name,type,contents){
+        let content = contents || ''
+        let file = new File(name,type,content).create()
+
+        this.files.push(file)
+
+        return file
+    }
+
+    newFolder(name,subfolders,files){
+        let folder = new Folder(name,subfolders,files).create()
+        this.currentLocation.subfolders.push(folder)
+
+        return folder
+    }
+}
+
+
